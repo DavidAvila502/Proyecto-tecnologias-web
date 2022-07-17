@@ -1,0 +1,35 @@
+.nav{
+   
+    height: 70px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E6E6E6;
+    margin-bottom: 70px;
+}
+
+.logo{
+    width: 54px;
+    height: 43px;
+    margin-left: 20px;
+}
+
+
+.menu_nav li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.menu_nav_item{
+    margin-right: 40px;
+    transition: 0.5s;
+}
+
+.menu_nav_item:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+    /* border-bottom: 2px solid #00BFA6; */
+}
