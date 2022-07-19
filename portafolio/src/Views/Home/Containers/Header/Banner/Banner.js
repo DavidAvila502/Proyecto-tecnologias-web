@@ -9,7 +9,7 @@ const Banner = () => {
     <section className="banner">
       <article className="banner_info_container">
         <div className="info_content">
-          <div className="content">
+          <div>
             <h1 className="titulo">
               <span className="gris">HOLA </span>
               <span className="verde">MUNDO!</span> <br />
