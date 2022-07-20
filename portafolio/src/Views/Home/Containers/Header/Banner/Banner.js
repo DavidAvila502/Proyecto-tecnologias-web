@@ -1,8 +1,6 @@
 import React from "react";
 
 import "./Banner.css";
-import Banner_imagen from "../../../../../images/dev-image.svg";
-import mensaje_icono from "../../../../../images/mensaje-icono.svg";
 
 const Banner = () => {
   return (
@@ -25,13 +23,16 @@ const Banner = () => {
             <div className="banner_botones">
               <a className="boton_blog">Blog</a>
               <a className="boton_contactame">Contactame</a>
-              <img src={mensaje_icono} className="mensaje_icono"></img>
+              <img
+                src={"./assets/images/mensaje-icono.svg"}
+                className="mensaje_icono"
+              ></img>
             </div>
           </div>
         </div>
       </article>
       <article className="banner_imagen_container">
-        <img className="banner_foto" src={Banner_imagen}></img>
+        <img className="banner_foto" src="./assets/images/dev-image.svg"></img>
       </article>
     </section>
   );
