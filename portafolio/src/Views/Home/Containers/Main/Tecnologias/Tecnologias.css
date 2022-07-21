@@ -1,0 +1,12 @@
+.tecnologias {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tecnologia_list {
+  list-style: none;
+  display: flex;
+}
+.tecnologia_list_item {
+  margin-right: 100px;
+}

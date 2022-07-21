@@ -1,7 +1,7 @@
 import React from "react";
 import "./destrezas.css";
 import SectionTitle from "../../../../../Components/SectionTitle/SectionTitle";
-import Destreza_card from "../../../../../Components/Destreza_card/Destreza_card";
+import DestrezaCard from "../../../../../Components/DestrezaCard/DestrezaCard";
 import Check from "../../../../../Components/Chek/Check";
 
 const Destrezas = () => {
@@ -11,7 +11,7 @@ const Destrezas = () => {
       <div className="destrezas_container">
         <ul className="list_destrezas">
           <li className="list_detrezas_item">
-            <Destreza_card
+            <DestrezaCard
               destreza_name="Diseño responsivo"
               destreza_image="assets/images/devices.svg"
             />
@@ -22,7 +22,7 @@ const Destrezas = () => {
           </li>
 
           <li className="list_detrezas_item">
-            <Destreza_card
+            <DestrezaCard
               destreza_name="Experiecnia de usuario"
               destreza_image="assets/images/smile.svg"
             />
@@ -32,7 +32,7 @@ const Destrezas = () => {
             <Check />
           </li>
           <li className="list_detrezas_item">
-            <Destreza_card
+            <DestrezaCard
               destreza_name="Posicionamiento"
               destreza_image="assets/images/seo.svg"
             />
@@ -43,7 +43,7 @@ const Destrezas = () => {
           </li>
 
           <li className="list_detrezas_item mr_end_item">
-            <Destreza_card
+            <DestrezaCard
               destreza_name="Diseño de interfaz"
               destreza_image="assets/images/desing.svg"
             />

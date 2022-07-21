@@ -1,7 +1,7 @@
 import React from "react";
-import "./Destreza_card.css";
+import "./DestrezaCard.css";
 
-const Destreza_card = (props) => {
+const DestrezaCard = (props) => {
   const { destreza_name, destreza_image, description } = props;
 
   return (
@@ -19,4 +19,4 @@ const Destreza_card = (props) => {
   );
 };
 
-export default Destreza_card;
+export default DestrezaCard;
