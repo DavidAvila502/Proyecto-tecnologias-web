@@ -8,7 +8,6 @@
 .intereses_list {
   list-style: none;
   display: flex;
-  /* background-color: beige; */
 }
 .in_list_item {
   margin-right: 100px;

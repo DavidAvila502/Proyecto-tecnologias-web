@@ -5,7 +5,11 @@ import InteresesCard from "../../../../../Components/InteresCard/InteresCard";
 const Intereses = () => {
   return (
     <section className="intereses mb_70">
-      <SectionTitle title="Interesado en aprender" color="#3F3D56" />
+      <SectionTitle
+        title="Interesado en aprender"
+        color="#3F3D56"
+        css_class="mt_25 mb_40"
+      />
       <ul className="intereses_list">
         <li className="in_list_item">
           <InteresesCard title="Ingles" image="assets/images/ingles.svg" />

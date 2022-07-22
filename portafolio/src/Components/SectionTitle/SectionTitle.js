@@ -3,10 +3,10 @@ import React from "react";
 import "./SectionTitle.css";
 
 const SectionTitle = (props) => {
-  const { title, color } = props;
+  const { title, color, css_class } = props;
 
   return (
-    <h2 style={{ color: color }} className="sc_title">
+    <h2 style={{ color: color }} className={"sc_title" + " " + css_class}>
       {title}
     </h2>
   );

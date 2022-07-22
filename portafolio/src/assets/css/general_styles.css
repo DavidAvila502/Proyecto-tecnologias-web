@@ -1,6 +1,41 @@
+/*************** Margenes *******************/
+
+.mt_25 {
+  margin-top: 25px;
+}
+
 .mt_70 {
   margin-top: 70px;
 }
 .mb_70 {
   margin-bottom: 70px;
+}
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+/*************** Fuentes *******************/
+.open_sans {
+  font-family: "Open Sans", sans-serif;
+}
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/*************** Font Weight *******************/
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_700 {
+  font-weight: 700;
 }
