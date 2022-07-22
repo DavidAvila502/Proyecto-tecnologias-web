@@ -1,0 +1,15 @@
+.intereses {
+  background-color: #cef2ed;
+  display: flex;
+  align-items: center;
+  height: 449px;
+  flex-direction: column;
+}
+.intereses_list {
+  list-style: none;
+  display: flex;
+  /* background-color: beige; */
+}
+.in_list_item {
+  margin-right: 100px;
+}
