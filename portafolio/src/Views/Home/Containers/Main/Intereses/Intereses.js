@@ -4,7 +4,7 @@ import "./Intereses.css";
 import InteresesCard from "../../../../../Components/InteresCard/InteresCard";
 const Intereses = () => {
   return (
-    <section className="intereses mb_70">
+    <section className="intereses">
       <SectionTitle
         title="Interesado en aprender"
         color="#3F3D56"

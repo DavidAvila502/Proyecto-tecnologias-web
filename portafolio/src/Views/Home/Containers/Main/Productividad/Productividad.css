@@ -1,0 +1,19 @@
+.productividad {
+  height: 449px;
+  background-color: #cfdde6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productividad_list {
+  list-style: none;
+  display: flex;
+}
+.product_description {
+  font-size: 12px;
+}
+
+.productividad_list_item {
+  margin-right: 100px;
+}

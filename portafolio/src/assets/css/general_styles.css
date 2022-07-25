@@ -1,9 +1,17 @@
 /*************** Margenes *******************/
-
+.mt_4 {
+  margin-top: 4px;
+}
+.mt_8 {
+  margin-top: 8px;
+}
 .mt_25 {
   margin-top: 25px;
 }
-
+.mh_32 {
+  margin-left: 32px;
+  margin-right: 32px;
+}
 .mt_70 {
   margin-top: 70px;
 }
@@ -38,4 +46,8 @@
 }
 .fw_700 {
   font-weight: 700;
+}
+/************** Colors ************/
+.semiblue {
+  color: #7a8d99;
 }

@@ -1,0 +1,27 @@
+/************ Estilos de las cartas ***********/
+
+.normalCard {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 229px;
+  align-items: center;
+  text-align: center;
+}
+
+/*********** Estilos de titulo *****************/
+.product_title {
+  font-size: 20px;
+}
+/*********** Estilos de descripcion*****************/
+
+.product_description {
+  font-size: 12px;
+}
+
+/*********** Estilos de imagen *****************/
+
+.normal_image {
+  width: 229px;
+  height: 171px;
+}
