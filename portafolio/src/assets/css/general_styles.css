@@ -5,12 +5,37 @@
 .mt_8 {
   margin-top: 8px;
 }
+.mt_11 {
+  margin-top: 11px;
+}
+.mb_13 {
+  margin-bottom: 13px;
+}
+.mb_19 {
+  margin-bottom: 19px;
+}
 .mt_25 {
   margin-top: 25px;
+}
+.mh_25 {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .mh_32 {
   margin-left: 32px;
   margin-right: 32px;
+}
+.mb_40 {
+  margin-bottom: 40px;
+}
+.mb_50 {
+  margin-bottom: 50px;
+}
+.mt_56 {
+  margin-top: 56px;
+}
+.mb_60 {
+  margin-bottom: 60px;
 }
 .mt_70 {
   margin-top: 70px;
@@ -18,14 +43,9 @@
 .mb_70 {
   margin-bottom: 70px;
 }
-
-.mb_40 {
-  margin-bottom: 40px;
+.mr_85 {
+  margin-right: 85px;
 }
-.mb_50 {
-  margin-bottom: 50px;
-}
-
 /*************** Fuentes *******************/
 .open_sans {
   font-family: "Open Sans", sans-serif;
@@ -51,3 +71,13 @@
 .semiblue {
   color: #7a8d99;
 }
+
+/*************/
+.fz_12 {
+  font-size: 12px;
+}
+.fz_20 {
+  font-size: 20px;
+}
+
+/**** formato de texto *****/

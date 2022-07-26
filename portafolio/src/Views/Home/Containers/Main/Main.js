@@ -3,6 +3,7 @@ import Destrezas from "./Deztresas/Destrezas";
 import Tecnologias from "./Tecnologias/Tecnologias";
 import Intereses from "./Intereses/Intereses";
 import Productividad from "./Productividad/Productividad";
+import Contacto from "./Contacto/Contacto";
 const Main = () => {
   return (
     <main>
@@ -10,6 +11,7 @@ const Main = () => {
       <Tecnologias />
       <Intereses />
       <Productividad />
+      <Contacto />
     </main>
   );
 };

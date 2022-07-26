@@ -1,0 +1,83 @@
+.contacto {
+  height: 449px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "form_contacto form_imagen";
+}
+
+.formulario_contacto {
+  grid-area: form_contacto;
+  background-color: #00bfa6;
+}
+.formulario_imagen {
+  grid-area: form_imagen;
+  background-color: #00937f;
+}
+.contacto_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen_contacto_container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionSubtitle {
+  color: #015c50;
+  font-size: 20px;
+}
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/******************APARTADO DE FORMULARIO**************/
+.form_entrada {
+  border: none;
+  border-bottom: 2px solid #015c50;
+  background-color: #00bfa6;
+  font-size: 18px;
+  line-height: 15px;
+  width: 260px;
+  color: white;
+}
+.form_entrada::placeholder {
+  color: #015c50;
+}
+
+.form_entrada:focus {
+  outline: none;
+}
+.label_entrada {
+  color: white;
+}
+.form_entrada_m {
+  width: 100%;
+}
+.boton_form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.boton_form_contacto {
+  width: 179px;
+  height: 44px;
+  font-size: 25px;
+  background-color: #5ed18d;
+  color: white;
+  border-radius: 5px;
+  border: none;
+
+  transition: 0.5s;
+}
+
+.boton_form_contacto:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: #82ecae;
+}

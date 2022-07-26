@@ -1,4 +1,4 @@
-.tecnologia_card {
+/* .tecnologia_card {
   height: 267px;
   width: 212px;
   border: 1px solid gray;
@@ -13,14 +13,14 @@
 
 .tecnologia_card:hover {
   transform: scale(1.2);
-}
+} */
 
-.image_tec {
+/* .image_tec {
   margin-top: 11px;
   height: 92px;
   width: 92px;
-}
-.title_tec {
+} */
+/* .title_tec {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -32,4 +32,4 @@
   font-size: 12px;
   margin: 0 25px;
   text-align: center;
-}
+} */

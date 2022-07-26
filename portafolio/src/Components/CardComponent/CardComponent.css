@@ -9,6 +9,23 @@
   text-align: center;
 }
 
+.tecnologia_card {
+  height: 267px;
+  width: 212px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid #e3e3e3;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.tecnologia_card:hover {
+  transform: scale(1.2);
+}
+
 /*********** Estilos de titulo *****************/
 .product_title {
   font-size: 20px;
@@ -24,4 +41,9 @@
 .normal_image {
   width: 229px;
   height: 171px;
+}
+
+.image_tec {
+  height: 92px;
+  width: 92px;
 }
