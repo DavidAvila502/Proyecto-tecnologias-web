@@ -3,7 +3,7 @@ import Nabvar from "./Navbar/Navbar";
 import Banner from "./Banner/Banner";
 const Header = () => {
   return (
-    <header >
+    <header>
       <Nabvar />
       <Banner />
     </header>

@@ -5,7 +5,7 @@ import CardComponent from "../../../../../Components/CardComponent/CardComponent
 
 const Intereses = () => {
   return (
-    <section className="intereses">
+    <section className="intereses" id="seccion_intereses">
       <SectionTitle
         title="Interesado en aprender"
         color="#3F3D56"

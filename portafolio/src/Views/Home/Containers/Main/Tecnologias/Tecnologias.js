@@ -5,7 +5,7 @@ import CardComponent from "../../../../../Components/CardComponent/CardComponent
 
 const Tecnologias = () => {
   return (
-    <section className="tecnologias">
+    <section className="tecnologias" id="seccion_tecnologias">
       <SectionTitle title="Tecnologias" color="#000" css_class="mt_25 mb_40" />
       <ul className="tecnologia_list">
         <li className="tecnologia_list_item">

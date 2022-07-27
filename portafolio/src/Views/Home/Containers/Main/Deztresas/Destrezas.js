@@ -6,7 +6,7 @@ import Check from "../../../../../Components/Chek/Check";
 
 const Destrezas = () => {
   return (
-    <section className="destrezas">
+    <section className="destrezas" id="seccion_destrezas">
       <SectionTitle title="Destrezas" color="#fff" css_class="mt_25 mb_50" />
       <div className="destrezas_container">
         <ul className="list_destrezas">

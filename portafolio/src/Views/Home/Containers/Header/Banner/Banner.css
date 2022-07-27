@@ -54,6 +54,7 @@
   cursor: pointer;
   transition: 0.5s;
   font-size: 50px;
+  text-decoration: none;
 }
 
 .boton_dev:hover {
@@ -88,6 +89,7 @@
   cursor: pointer;
   margin-right: 40px;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .boton_blog:hover {
@@ -109,8 +111,9 @@
   font-size: 25px;
   border-radius: 10px;
   cursor: pointer;
-  margin-right: 17px;
+  margin-right: 25px;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .boton_contactame:hover {
