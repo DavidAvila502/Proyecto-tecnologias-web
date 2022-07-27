@@ -1,0 +1,22 @@
+.social_container {
+  height: 127px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+}
+.social_text {
+  color: #cfcfcf;
+}
+.social_list {
+  list-style: none;
+  display: flex;
+}
+.social_image {
+  height: 34px;
+  width: 34px;
+}
+
+.social_list-item:hover {
+  cursor: pointer;
+}

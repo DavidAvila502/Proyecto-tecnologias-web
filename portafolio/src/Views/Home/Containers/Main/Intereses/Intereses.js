@@ -1,7 +1,8 @@
 import React from "react";
-import SectionTitle from "../../../../../Components/SectionTitle/SectionTitle";
 import "./Intereses.css";
-import InteresesCard from "../../../../../Components/InteresCard/InteresCard";
+import SectionTitle from "../../../../../Components/SectionTitle/SectionTitle";
+import CardComponent from "../../../../../Components/CardComponent/CardComponent";
+
 const Intereses = () => {
   return (
     <section className="intereses">
@@ -12,19 +13,40 @@ const Intereses = () => {
       />
       <ul className="intereses_list">
         <li className="in_list_item">
-          <InteresesCard title="Ingles" image="assets/images/ingles.svg" />
-        </li>
-        <li className="in_list_item">
-          <InteresesCard
-            title="Illustracion"
-            image="assets/images/illustracion.svg"
+          <CardComponent
+            image="assets/images/ingles.svg"
+            title="Ingles"
+            card_style="interes_card"
+            title_style="fw_700 open_sans semiblue mt_25 fz_20"
+            image_style="interes_image"
           />
         </li>
         <li className="in_list_item">
-          <InteresesCard title="Mongo DB" image="assets/images/mongo.svg" />
+          <CardComponent
+            image="assets/images/illustracion.svg"
+            title="Illustracion"
+            card_style="interes_card"
+            title_style="fw_700 open_sans semiblue mt_25 fz_20"
+            image_style="interes_image"
+          />
+        </li>
+        <li className="in_list_item">
+          <CardComponent
+            image="assets/images/mongo.svg"
+            title="Mongo DB"
+            card_style="interes_card"
+            title_style="fw_700 open_sans semiblue mt_25 fz_20"
+            image_style="interes_image"
+          />
         </li>
         <li>
-          <InteresesCard title="Flutter" image="assets/images/flutter.svg" />
+          <CardComponent
+            image="assets/images/flutter.svg"
+            title="Fulutter"
+            card_style="interes_card"
+            title_style="fw_700 open_sans semiblue mt_25 fz_20"
+            image_style="interes_image"
+          />
         </li>
       </ul>
     </section>

@@ -3,7 +3,7 @@ import SectionTitle from "../../../../../Components/SectionTitle/SectionTitle";
 import "./Contacto.css";
 const Contacto = () => {
   return (
-    <section className="contacto mb_70">
+    <section className="contacto">
       <section className="formulario_contacto">
         <div className="contacto_content">
           <div className="formContacto">

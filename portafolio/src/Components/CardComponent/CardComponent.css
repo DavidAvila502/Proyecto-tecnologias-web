@@ -26,6 +26,16 @@
   transform: scale(1.2);
 }
 
+.interes_card {
+  width: 229px;
+  height: 300px;
+  /* background-color: cornflowerblue; */
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
 /*********** Estilos de titulo *****************/
 .product_title {
   font-size: 20px;
@@ -46,4 +56,9 @@
 .image_tec {
   height: 92px;
   width: 92px;
+}
+
+.interes_image {
+  width: 229px;
+  height: 171px;
 }
