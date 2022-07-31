@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_tecnologias_tecnologias",
+  "info": {
+    "displayName": "Tecnologias",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "Card": {
+      "displayName": "Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "tecnologias.card"
+    }
+  }
+}

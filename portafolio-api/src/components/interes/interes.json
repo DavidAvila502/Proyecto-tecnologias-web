@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_interes_interes",
+  "info": {
+    "displayName": "Interes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "Card": {
+      "displayName": "Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "interes.card"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_banner_botons",
+  "info": {
+    "displayName": "Boton"
+  },
+  "options": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    }
+  }
+}

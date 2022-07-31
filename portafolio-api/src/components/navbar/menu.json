@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_navbar_menus",
+  "info": {
+    "displayName": "Menu"
+  },
+  "options": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    }
+  }
+}

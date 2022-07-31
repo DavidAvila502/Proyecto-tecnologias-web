@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_productividad_productividads",
+  "info": {
+    "displayName": "Productividad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "Card": {
+      "displayName": "Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "productividad.card"
+    }
+  }
+}

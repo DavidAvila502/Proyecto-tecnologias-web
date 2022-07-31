@@ -81,7 +81,7 @@ const Tecnologias = () => {
           <CardComponent
             image="assets/images/java.svg"
             title="JAVA"
-            description="Entorno en tiempo de ejecucion para javascript en capa del servidor."
+            description="Lenguaje de progracmación orientado a objetos multiplataforma."
             card_style="tecnologia_card"
             title_style="quicksand fw_700 fz_20 mb_19"
             description_style="quicksand fw_500 fz_12 mh_25"

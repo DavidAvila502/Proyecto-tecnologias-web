@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_contacto_contactos",
+  "info": {
+    "displayName": "Contacto",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "Campo": {
+      "displayName": "campo",
+      "type": "component",
+      "repeatable": true,
+      "component": "contacto.campo"
+    },
+    "icono_contacto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "boton": {
+      "type": "string"
+    }
+  }
+}

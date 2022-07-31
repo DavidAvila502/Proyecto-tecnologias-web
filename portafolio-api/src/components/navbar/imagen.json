@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_navbar_imagens",
+  "info": {
+    "displayName": "imagen",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Icono": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navbar.menu"
+    }
+  }
+}

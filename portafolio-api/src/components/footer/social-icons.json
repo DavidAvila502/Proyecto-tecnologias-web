@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_footer_social_icons",
+  "info": {
+    "displayName": "social_icons",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "titulo": {
+      "type": "string"
+    }
+  }
+}

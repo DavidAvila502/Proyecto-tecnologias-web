@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_destrezas_destrezas",
+  "info": {
+    "displayName": "Destrezas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "Card": {
+      "displayName": "Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "destrezas.card"
+    },
+    "arrow_icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

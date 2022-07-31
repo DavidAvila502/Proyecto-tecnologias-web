@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_interes_cards",
+  "info": {
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icono": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "titulo": {
+      "type": "string"
+    }
+  }
+}

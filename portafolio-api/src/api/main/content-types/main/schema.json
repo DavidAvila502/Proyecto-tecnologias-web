@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mains",
+  "info": {
+    "singularName": "main",
+    "pluralName": "mains",
+    "displayName": "Main",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Destrezas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "destrezas.destrezas"
+    },
+    "Tecnologias": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tecnologias.tecnologias"
+    },
+    "Interes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "interes.interes"
+    },
+    "Productividad": {
+      "type": "component",
+      "repeatable": false,
+      "component": "productividad.productividad"
+    },
+    "Contacto": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contacto.contacto"
+    }
+  }
+}

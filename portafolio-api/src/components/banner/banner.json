@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_banner_banners",
+  "info": {
+    "displayName": "Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Subtitulo": {
+      "type": "string"
+    },
+    "Boton": {
+      "displayName": "Boton",
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.boton"
+    },
+    "Icono_contacto": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Imagen_banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Boton_titulo": {
+      "type": "string"
+    }
+  }
+}

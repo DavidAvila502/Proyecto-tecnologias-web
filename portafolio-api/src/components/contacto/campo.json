@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_contacto_campos",
+  "info": {
+    "displayName": "campo"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}
