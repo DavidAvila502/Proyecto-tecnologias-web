@@ -62,3 +62,27 @@
   width: 229px;
   height: 171px;
 }
+
+/**********************Media queries **********************/
+
+@media (max-width: 1228px) {
+  .normalCard {
+    height: 300px;
+    width: 200px;
+  }
+
+  .tecnologia_card {
+    height: 267px;
+    width: 190px;
+  }
+
+  .interes_card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .interes_image {
+    width: 200px;
+    height: 171px;
+  }
+}

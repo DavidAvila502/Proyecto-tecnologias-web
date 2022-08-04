@@ -3,10 +3,26 @@
   align-items: center;
   flex-direction: column;
 }
+/* .tecnologia_list {
+  list-style: none;
+  display: flex;
+} */
+.tecnologia_list_item {
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+.tecnologia_list_item2 {
+  margin-bottom: 100px;
+}
 .tecnologia_list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  width: 1150px;
 }
-.tecnologia_list_item {
-  margin-right: 100px;
+
+@media (max-width: 1228px) {
+  .tecnologia_list {
+    width: 1060px;
+  }
 }

@@ -3,51 +3,55 @@ import "./destrezas.css";
 import SectionTitle from "../../../../../Components/SectionTitle/SectionTitle";
 import DestrezaCard from "../../../../../Components/DestrezaCard/DestrezaCard";
 import Check from "../../../../../Components/Chek/Check";
+import { useGeneralContext } from "../../../../../Context/GenearlContext";
 
 const Destrezas = () => {
+  const datos = useGeneralContext();
+  let destrezasData = datos.mainData.Destrezas;
+
   return (
     <section className="destrezas" id="seccion_destrezas">
-      <SectionTitle title="Destrezas" color="#fff" css_class="mt_25 mb_50" />
+      <SectionTitle
+        title={destrezasData.titulo}
+        color="#fff"
+        css_class="mt_25 mb_50"
+      />
       <div className="destrezas_container">
         <ul className="list_destrezas">
-          <li className="list_detrezas_item">
-            <DestrezaCard
-              destreza_name="Diseño responsivo"
-              destreza_image="assets/images/devices.svg"
-            />
-          </li>
-
-          <li className="check_container">
-            <Check />
-          </li>
-
-          <li className="list_detrezas_item">
-            <DestrezaCard
-              destreza_name="Experiecnia de usuario"
-              destreza_image="assets/images/smile.svg"
-            />
-          </li>
-
-          <li className="check_container">
-            <Check />
-          </li>
-          <li className="list_detrezas_item">
-            <DestrezaCard
-              destreza_name="Posicionamiento"
-              destreza_image="assets/images/seo.svg"
-            />
-          </li>
-
-          <li className="check_container">
-            <Check />
-          </li>
-
-          <li className="list_detrezas_item mr_end_item">
-            <DestrezaCard
-              destreza_name="Diseño de interfaz"
-              destreza_image="assets/images/desing.svg"
-            />
-          </li>
+          {destrezasData.Card.map((item, index) => {
+            if (item.id !== 1) {
+              return (
+                <span key={index} style={{ display: "flex" }}>
+                  <li className="check_container" key={index}>
+                    <Check
+                      image={`http://localhost:1337${destrezasData.arrow_icon.data.attributes.url}`}
+                    />
+                  </li>
+                  <li
+                    className="list_detrezas_item mr_end_item"
+                    key={item.titulo}
+                  >
+                    <DestrezaCard
+                      destreza_name={item.titulo}
+                      destreza_image={`http://localhost:1337${item.icono.data[0].attributes.url}`}
+                    />
+                  </li>
+                </span>
+              );
+            } else {
+              return (
+                <li
+                  className="list_detrezas_item mr_end_item"
+                  key={item.titulo}
+                >
+                  <DestrezaCard
+                    destreza_name={item.titulo}
+                    destreza_image={`http://localhost:1337${item.icono.data[0].attributes.url}`}
+                  />
+                </li>
+              );
+            }
+          })}
         </ul>
       </div>
     </section>

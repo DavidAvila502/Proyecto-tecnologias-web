@@ -1,33 +1,24 @@
 import React from "react";
-
 import "./Navbar.css";
+import { useGeneralContext } from "../../../../../Context/GenearlContext";
 
 const Nabvar = () => {
+  const datos = useGeneralContext();
+  let dataNavbar = datos.headerData.Navbar;
+
   return (
     <nav className="nav">
-      <img src="assets/images/glasses.png" alt="logo" className="logo" />
+      <img
+        src={`http://localhost:1337${dataNavbar[0].Icono.data.attributes.url}`}
+        alt="logo"
+        className="logo"
+      />
       <ul className="menu_nav">
-        <li className="menu_nav_item">
-          <a href="#seccion_banner">Inicio</a>
-        </li>
-        <li className="menu_nav_item">
-          <a href="#seccion_destrezas">Destrezas</a>
-        </li>
-        <li className="menu_nav_item">
-          <a href="#seccion_tecnologias">Tecnologias</a>
-        </li>
-        <li className="menu_nav_item">
-          <a href="#seccion_intereses">Interes</a>
-        </li>
-        <li className="menu_nav_item">
-          <a href="#seccion_productividad">Productividad</a>
-        </li>
-        <li className="menu_nav_item">
-          <a href="#seccion_contacto">Contacto</a>
-        </li>
-        <li className="menu_nav_item" style={{ marginRight: "20px" }}>
-          Blog
-        </li>
+        {dataNavbar[0].menu.map((item) => (
+          <li className="menu_nav_item" key={item.Titulo}>
+            <a href={`#seccion_${item.Titulo.toLowerCase()}`}>{item.Titulo}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

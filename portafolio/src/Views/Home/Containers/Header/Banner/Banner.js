@@ -1,36 +1,38 @@
 import React from "react";
-
+import { useGeneralContext } from "../../../../../Context/GenearlContext";
 import "./Banner.css";
 
 const Banner = () => {
+  const { headerData } = useGeneralContext();
+  const bannerData = headerData.Banner;
+
+  let titulo = bannerData.Titulo.split(" ");
+  let elseTitulo = titulo.slice(2, titulo.length).join(" ");
+
   return (
-    <section className="banner" id="seccion_banner">
+    <section className="banner" id="seccion_inicio">
       <article className="banner_info_container">
         <div className="info_content">
           <div>
             <h1 className="titulo">
-              <span className="gris">HOLA </span>
-              <span className="verde">MUNDO!</span> <br />
-              <span className="gris"> Yo soy,</span>
-              <a className="boton_dev" href="#seccion_banner">
-                David Avila
+              <span className="gris">{titulo[0]} </span>
+              <span className="verde">{titulo[1]}</span> <br />
+              <span className="gris">{elseTitulo}</span>
+              <a className="boton_dev" href="#seccion_inicio">
+                {bannerData.Boton_titulo}
               </a>
             </h1>
 
-            <p className="dev_descripcion">
-              Desarrollador de software con experiencia en <br />
-              desarrollo movil y tecnologias web.
-            </p>
+            <p className="dev_descripcion">{bannerData.Subtitulo}</p>
 
             <div className="banner_botones">
-              <a className="boton_blog" href="#seccion_banner">
-                Blog
-              </a>
-              <a className="boton_contactame" href="#seccion_contacto">
-                Contactame
-              </a>
+              {bannerData.Boton.map((item, index) => (
+                <a className={item.clase} href={item.href} key={index}>
+                  {item.Titulo}
+                </a>
+              ))}
               <img
-                src={"./assets/images/mensaje-icono.svg"}
+                src={`http://localhost:1337${bannerData.Icono_contacto.data[0].attributes.url}`}
                 className="mensaje_icono"
                 alt="contacto"
               ></img>
@@ -41,7 +43,7 @@ const Banner = () => {
       <article className="banner_imagen_container">
         <img
           className="banner_foto"
-          src="./assets/images/dev-image.svg"
+          src={`http://localhost:1337${bannerData.Imagen_banner.data.attributes.url}`}
           alt="developer"
         ></img>
       </article>

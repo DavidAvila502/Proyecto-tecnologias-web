@@ -81,3 +81,11 @@
   cursor: pointer;
   background-color: #82ecae;
 }
+
+@media (max-width: 1228px) {
+  .form_entrada {
+    width: 220px;
+
+    font-size: 15px;
+  }
+}

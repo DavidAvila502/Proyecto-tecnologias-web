@@ -1,11 +1,18 @@
 {
   "collectionName": "components_banner_botons",
   "info": {
-    "displayName": "Boton"
+    "displayName": "Boton",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Titulo": {
+      "type": "string"
+    },
+    "clase": {
+      "type": "string"
+    },
+    "href": {
       "type": "string"
     }
   }

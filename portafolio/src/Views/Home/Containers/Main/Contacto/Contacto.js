@@ -1,20 +1,25 @@
 import React from "react";
 import SectionTitle from "../../../../../Components/SectionTitle/SectionTitle";
 import "./Contacto.css";
+
+import { useGeneralContext } from "../../../../../Context/GenearlContext";
 const Contacto = () => {
+  const datos = useGeneralContext();
+  let contactoData = datos.mainData.Contacto;
+
   return (
     <section className="contacto" id="seccion_contacto">
       <section className="formulario_contacto">
         <div className="contacto_content">
           <div className="formContacto">
             <SectionTitle
-              title="Contacto"
+              title={contactoData.titulo}
               color="white"
               css_class="mt_25 mb_13"
             />
 
             <h3 className="sectionSubtitle quicksand fw_700">
-              ¡Envia un mesaje!
+              {contactoData.subtitulo}
             </h3>
 
             <form className="realForm mt_56">
@@ -22,17 +27,21 @@ const Contacto = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <p className="label_entrada">Nombre</p>
+                      <p className="label_entrada">
+                        {contactoData.Campo[0].titulo}
+                      </p>
                       <input
-                        placeholder="Ingresa tu nombre"
+                        placeholder={contactoData.Campo[0].placeholder}
                         className="form_entrada quicksand fw_700 mr_85 mt_8"
                       />
                     </td>
                     <td>
-                      <p className="label_entrada">Correo</p>
+                      <p className="label_entrada">
+                        {contactoData.Campo[1].titulo}
+                      </p>
                       <input
                         type={"text"}
-                        placeholder="Ingresa tu correo electornico"
+                        placeholder={contactoData.Campo[1].placeholder}
                         className="form_entrada quicksand fw_700  mt_8"
                       />
                     </td>
@@ -40,10 +49,12 @@ const Contacto = () => {
 
                   <tr>
                     <td colSpan={"2"}>
-                      <p className="label_entrada mt_70">Mensaje</p>
+                      <p className="label_entrada mt_70">
+                        {contactoData.Campo[2].titulo}
+                      </p>
                       <input
                         type={"text"}
-                        placeholder="Ingresa tu mensaje"
+                        placeholder={contactoData.Campo[2].placeholder}
                         className="form_entrada form_entrada_m quicksand fw_700  mt_8"
                       />
                     </td>
@@ -53,9 +64,8 @@ const Contacto = () => {
                     <td colSpan={"2"}>
                       <div className="boton_form_container">
                         <input
-                          value={"¡Enviar!"}
+                          value={contactoData.boton}
                           type={"button"}
-                          placeholder="Ingresa tu mensaje"
                           className="mt_25 boton_form_contacto quicksand fw_700"
                         />
                       </div>
@@ -69,7 +79,10 @@ const Contacto = () => {
       </section>
       <div className="formulario_imagen">
         <div className="imagen_contacto_container">
-          <img src="assets/images/contacto.svg" alt="Contacto" />
+          <img
+            src={`http://localhost:1337${contactoData.icono_contacto.data.attributes.url}`}
+            alt="Contacto"
+          />
         </div>
       </div>
     </section>
