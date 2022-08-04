@@ -1,11 +1,18 @@
 {
   "collectionName": "components_navbar_menus",
   "info": {
-    "displayName": "Menu"
+    "displayName": "Menu",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Titulo": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "route": {
       "type": "string"
     }
   }

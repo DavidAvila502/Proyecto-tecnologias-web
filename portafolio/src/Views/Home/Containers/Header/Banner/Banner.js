@@ -2,6 +2,8 @@ import React from "react";
 import { useGeneralContext } from "../../../../../Context/GenearlContext";
 import "./Banner.css";
 
+import { Outlet, Link } from "react-router-dom";
+
 const Banner = () => {
   const { headerData } = useGeneralContext();
   const bannerData = headerData.Banner;
@@ -26,11 +28,28 @@ const Banner = () => {
             <p className="dev_descripcion">{bannerData.Subtitulo}</p>
 
             <div className="banner_botones">
-              {bannerData.Boton.map((item, index) => (
-                <a className={item.clase} href={item.href} key={index}>
-                  {item.Titulo}
-                </a>
-              ))}
+              {bannerData.Boton.map((item, index) => {
+                if (item.route) {
+                  return (
+                    <Link
+                      className={item.clase}
+                      href={item.href}
+                      key={index}
+                      to={item.route}
+                    >
+                      {item.Titulo}
+                    </Link>
+                  );
+                } else {
+                  return (
+                    <a className={item.clase} href={item.href} key={index}>
+                      {item.Titulo}
+                    </a>
+                  );
+                }
+
+                <Outlet />;
+              })}
               <img
                 src={`http://localhost:1337${bannerData.Icono_contacto.data[0].attributes.url}`}
                 className="mensaje_icono"

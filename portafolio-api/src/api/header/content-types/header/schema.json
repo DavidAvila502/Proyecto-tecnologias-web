@@ -14,7 +14,7 @@
   "attributes": {
     "Navbar": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "navbar.imagen"
     },
     "Banner": {
