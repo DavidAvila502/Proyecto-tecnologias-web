@@ -17,7 +17,7 @@ const HomeView = () => {
     getData("/footers").then((resp) => setFooterData(resp.data[0].attributes));
   }, []);
 
-  if (headerData && mainData && footerData)
+  if (headerData && mainData && footerData) {
     return (
       <GeneralProvider value={{ headerData, mainData, footerData }}>
         <Header />
@@ -25,6 +25,20 @@ const HomeView = () => {
         <Footer />
       </GeneralProvider>
     );
+  } else {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <img src="assets/images/loading2.svg" style={{ height: "300px" }} />
+      </div>
+    );
+  }
 };
 
 export default HomeView;

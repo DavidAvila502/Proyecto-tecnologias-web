@@ -82,12 +82,10 @@
   height: 50px;
   width: 250px;
   background-color: #00bfa6;
-  /* padding: 5px 56px; */
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 30px;
-  cursor: pointer;
   margin-right: 40px;
   transition: 0.5s;
   text-decoration: none;
@@ -105,13 +103,11 @@
   height: 50px;
   width: 250px;
   background-color: #3f3d56;
-  /* padding: 8px 20px; */
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 25px;
   border-radius: 10px;
-  cursor: pointer;
   margin-right: 25px;
   transition: 0.5s;
   text-decoration: none;
