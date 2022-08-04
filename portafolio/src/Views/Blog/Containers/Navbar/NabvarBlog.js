@@ -1,10 +1,10 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavbarBlog.css";
 
 import { Outlet, Link } from "react-router-dom";
 const NabvarBlog = () => {
   return (
-    <nav className="nav">
+    <nav className="nav2">
       <img src="assets/images/glasses.png" alt="logo" className="logo" />
       <ul className="menu_nav">
         <li className="menu_nav_item">

@@ -1,12 +1,13 @@
 html {
   scroll-behavior: smooth;
 }
-.nav {
+.nav2 {
   background-color: white;
   /* position: fixed;
   top: 0; */
   height: 70px;
   width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
