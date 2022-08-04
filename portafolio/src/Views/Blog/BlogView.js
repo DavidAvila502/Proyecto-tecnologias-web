@@ -4,7 +4,12 @@ const BlogView = () => {
   return (
     <div>
       <NabvarBlog />
-      <h1>Aqui deberia estar el blog</h1>
+      <img
+        src="assets/images/cat.jpg"
+        style={{ height: "400px" }}
+        alt="sad cat"
+      />
+      <h1>Aqui deberia estar el blog 😢</h1>
     </div>
   );
 };
